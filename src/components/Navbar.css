@@ -10,6 +10,11 @@
   z-index: 10;
 }
 
+.header-scroll {
+  background-color: rgba(0, 0, 0, 0.8);
+  transition: 0.5s ease-out;
+}
+
 .nav-menu {
   display: flex;
 }

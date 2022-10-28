@@ -10,7 +10,8 @@
 h1,
 h4,
 p,
-a {
+a, 
+label {
   color: white;
 }
 
@@ -65,4 +66,21 @@ code {
   background: transparent;
   color: white;
   transition: 0.3s ease-out;
+}
+
+#componentVideo {
+  position: absolute;
+  max-height: 800px;
+  width: 100%;
+  max-width: 100%;
+  object-fit: cover;
+  object-position: center;
+  overflow: hidden;
+  z-index: -1;
+}
+
+@media screen and (max-width: 1240px) {
+  #componentVideo {
+    display: none;
+  }
 }

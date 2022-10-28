@@ -14,57 +14,37 @@ const Footer = () => {
   return (
     <div className='footer'>
       <div className='footer-container'>
-        <div className='left'>
-          <div className='location info'>
+        <div className='footer-left'>
+          <div className='footer-location info'>
             <h4>
-              <FaSearchLocation
-                className='icon'
-              />
+              <FaSearchLocation className='icon' />
               USA
             </h4>
           </div>
-          <div className='resume info'>
+          <div className='footer-resume info'>
             <h4>
-              <FaFile
-                className='icon'
-              />
+              <FaFile className='icon' />
               Resume
             </h4>
           </div>
-          <div className='github info'>
+          <div className='footer-github info'>
             <h4>
-              <FaGithub
-                className='icon'
-              />
+              <FaGithub className='icon' />
               Github
             </h4>
           </div>
-          <div className='linkedin info'>
+          <div className='footer-linkedin info'>
             <h4>
-              <FaLinkedin
-                className='icon'
-              />
+              <FaLinkedin className='icon' />
               LinkedIn
             </h4>
           </div>
-          <div className='email info'>
+          <div className='footer-email info'>
             <h4>
-              <FaPaperPlane
-                className='icon'
-              />
+              <FaPaperPlane className='icon' />
               Email
             </h4>
           </div>
-        </div>
-        <div className='right'>
-          <ul className='skills'>
-            <h4>JavaScript</h4>
-            <h4>Node</h4>
-            <h4>React</h4>
-            <h4>Java</h4>
-            <h4>SQL</h4>
-            <h4>Git</h4>
-          </ul>
         </div>
       </div>
     </div>

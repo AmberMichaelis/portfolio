@@ -1,0 +1,28 @@
+/** @format */
+
+.resume {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.resume-left,
+.resume-right {
+  text-align: center;
+  margin: auto;
+  padding: 1rem 4rem;
+  max-width: 600px;
+}
+
+.resume-left p,
+.resume-right p {
+  margin: 1.2rem 0;
+}
+
+@media screen and (max-width: 1140px) {
+  .resume {
+    grid-template-columns: 1fr;
+  }
+}

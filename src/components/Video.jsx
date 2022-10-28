@@ -14,7 +14,7 @@ const Video = () => {
       </video>
       <div className='homeVideoText'>
         <h1>Amber Michaelis</h1>
-        <p>Full Stack Developer</p>
+        <p>Sr. Full Stack Developer</p>
         <div>
           <Link to='/resume' className='btn'>
             Resume
