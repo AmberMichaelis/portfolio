@@ -7,7 +7,6 @@ import spaceVideo from '../assests/space.mp4';
 import {
   FaGithub,
   FaLinkedin,
-  FaSearchLocation,
   FaPaperPlane,
   FaReact,
   FaJsSquare,
@@ -26,16 +25,6 @@ const Resume = () => {
               Amber Michaelis <br />
               <span>Full Stack Developer</span>
             </h2>
-            <div className='resume__contact__info resume__projects flip'>
-              <a
-                href='https://www.krustykrab.us/projects.html'
-                target='_blank'
-                rel='noreferrer'
-                className='resume__projects__button'
-                data-back='Click Me'
-                data-front='Personal Projects'
-              > </a>
-            </div>
           </div>
 
           <div className='resume__contact__info'>
@@ -48,8 +37,8 @@ const Resume = () => {
                 className='resume__contact__link'
               >
                 <li>
-                <span class="resume__contact__icon"
-                    ><FaPaperPlane className='icon' />
+                  <span class='resume__contact__icon'>
+                    <FaPaperPlane className='icon' />
                   </span>
                   <span className='resume__contact__text'>
                     AmberM31@protonmail.com
@@ -63,8 +52,8 @@ const Resume = () => {
                 className='resume__contact__link'
               >
                 <li>
-                <span class="resume__contact__icon"
-                    ><FaReact className='icon' />
+                  <span class='resume__contact__icon'>
+                    <FaReact className='icon' />
                   </span>
                   <span className='resume__contact__text'>
                     MyWeddingWebsite.online (React)
@@ -78,8 +67,8 @@ const Resume = () => {
                 className='resume__contact__link'
               >
                 <li>
-                <span class="resume__contact__icon"
-                    ><FaJsSquare className='icon' />
+                  <span class='resume__contact__icon'>
+                    <FaJsSquare className='icon' />
                   </span>
                   <span className='resume__contact__text'>
                     KrustyKrab.us (JavaScript)
@@ -93,8 +82,8 @@ const Resume = () => {
                 className='resume__contact__link'
               >
                 <li>
-                <span class="resume__contact__icon"
-                    ><FaGithub className='icon' />
+                  <span class='resume__contact__icon'>
+                    <FaGithub className='icon' />
                   </span>
                   <span className='resume__contact__text'>
                     GitHub.com/AmberMichaelis
@@ -108,20 +97,14 @@ const Resume = () => {
                 className='resume__contact__link'
               >
                 <li>
-                <span class="resume__contact__icon"
-                    ><FaLinkedin className='icon' />
+                  <span class='resume__contact__icon'>
+                    <FaLinkedin className='icon' />
                   </span>
                   <span className='resume__contact__text'>
                     LinkedIn.com/AmberMichaelis
                   </span>
                 </li>
               </a>
-              <li>
-              <span class="resume__contact__icon"
-                    ><FaSearchLocation className='icon' />
-                  </span>
-                <span className='resume__contact__text'>Remote, USA</span>
-              </li>
             </ul>
           </div>
 
@@ -145,18 +128,31 @@ const Resume = () => {
               </li>
             </ul>
           </div>
+          
+          <div className='resume__contact__info resume__projects flip'>
+              <a
+                href='https://www.krustykrab.us/projects.html'
+                target='_blank'
+                rel='noreferrer'
+                className='resume__projects__button'
+                data-back='Click Me'
+                data-front='Personal Projects'
+              >
+                {' '}
+              </a>
+            </div>
+
         </div>
         <div className='resume__right'>
           <div className='rightStuff'>
             <div className='resume__about'>
               <h2 className='resume__about__title'>Profile</h2>
               <p>
-                Software Developer with 2 years of full stack development
-                experience. 4 years of experience working remotely. Experience
-                with unit testing using Jest, libraries including jQuery,
-                database tools such as Postman, and asynchronous programming.
-                Scored in the top 5% of 2.2M people on LinkedIn JavaScript
-                assessment.
+                2 years of full stack development experience. 4 years of remote
+                experience. Jest unit testing, libraries
+                including jQuery, database tools such as Postman, and
+                asynchronous programming. Scored in the top 5% of 2.2M people on
+                LinkedIn JavaScript assessment.
                 <br />
                 <br />
                 Pursuing an online Masters of Computer Science. Enjoy being in
@@ -167,27 +163,6 @@ const Resume = () => {
               <h2 className='resume__about__title'>Experience</h2>
               <div className='resume__experience__box'>
                 <div className='resume__experience__year__company'>
-                  <h5>2022 - Present</h5>
-                  <h5>
-                    Starbase Security
-                    <br />
-                    Solutions
-                  </h5>
-                  <h5 className='resume__experience__location'>
-                    Remote USA/Europe
-                  </h5>
-                </div>
-                <div className='resume__experience__text'>
-                  <h4>Lead Full Stack SERN Developer</h4>
-                  <p>
-                    Team lead using SQL, Express, React, Node. Helping your
-                    rockets get to the right planet the first time. Giving you
-                    more than just security, giving you peace of mind.
-                  </p>
-                </div>
-              </div>
-              <div className='resume__experience__box'>
-                <div className='resume__experience__year__company'>
                   <h5>2021 - Present</h5>
                   <h5>Self-Employed</h5>
                   <h5 className='resume__experience__location'>
@@ -195,11 +170,12 @@ const Resume = () => {
                   </h5>
                 </div>
                 <div className='resume__experience__text'>
-                  <h4>Freelance Contractor</h4>
+                  <h4>Lead Full Stack Developer</h4>
                   <p>
-                    Various frontend and backend mostly in JS and Node.
-                    Refactoring code and writing tests for decentralized storage
-                    platform. Maintaining multiple non-profit websites.
+                    Various frontend and backend projects using JavaScript, SQL,
+                    Express, React, Node. Consultation with end-users,
+                    development team, and implementation of a technical design
+                    that meets business needs and execution.
                   </p>
                 </div>
               </div>

@@ -4,7 +4,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import './Video.css';
 import spaceVideo from '../assests/space.mp4';
-import '../index.css'
+import '../index.css';
 
 const Video = () => {
   return (
@@ -19,9 +19,14 @@ const Video = () => {
           <Link to='/resume' className='btn'>
             Resume
           </Link>
-          <Link to='/contact' className='btn btn-light'>
+          <a
+            href='mailto:amberm31@protonmail.com?subject=Development Inquiry'
+            target='_blank'
+            rel='noreferrer'
+            className='btn btn-light'
+          >
             Contact
-          </Link>
+          </a>
         </div>
       </div>
     </div>

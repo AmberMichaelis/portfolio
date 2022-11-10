@@ -267,16 +267,7 @@
 .resume__about .resume__about__title {
   text-transform: uppercase;
   letter-spacing: 1px;
-  margin-bottom: 10px;
-}
-
-.resume__about p .resume__pull__requests {
-  text-decoration: none;
-  font-weight: bold;
-}
-
-.resume__about p .resume__pull__requests:hover {
-  color: #ff3048;
+  margin-bottom: 20px;
 }
 
 .resume__about .resume__experience__box {
@@ -316,6 +307,7 @@
 
 .resume__about .resume__experience__box .resume__experience__text p {
   font-size: 16px;
+  margin-bottom: 20px;
 }
 
 .resume__about:last-child {
