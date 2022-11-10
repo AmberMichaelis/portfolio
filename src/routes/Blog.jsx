@@ -1,7 +1,7 @@
 import React from 'react'
 import BannerImage1 from '../components/BannerImage1'
 import Navbar from '../components/Navbar'
-import ProjectCards from '../components/ProjectCards'
+import BlogCards from '../components/BlogCards'
 import Footer from '../components/Footer'
 
 const Projects = () => {
@@ -9,7 +9,7 @@ const Projects = () => {
     <div>
         <Navbar />
         <BannerImage1 heading='PROJECTS' text='Super fun personal creations.'/>
-        <ProjectCards />
+        <BlogCards />
         <Footer />
     </div>
   )

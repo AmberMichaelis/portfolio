@@ -4,6 +4,14 @@ import React from 'react';
 import './Resume.css';
 import '../index.css';
 import spaceVideo from '../assests/space.mp4';
+import {
+  FaGithub,
+  FaLinkedin,
+  FaSearchLocation,
+  FaPaperPlane,
+  FaReact,
+  FaJsSquare,
+} from 'react-icons/fa';
 
 const Resume = () => {
   return (
@@ -40,6 +48,9 @@ const Resume = () => {
                 className='resume__contact__link'
               >
                 <li>
+                <span class="resume__contact__icon"
+                    ><FaPaperPlane className='icon' />
+                  </span>
                   <span className='resume__contact__text'>
                     AmberM31@protonmail.com
                   </span>
@@ -52,6 +63,9 @@ const Resume = () => {
                 className='resume__contact__link'
               >
                 <li>
+                <span class="resume__contact__icon"
+                    ><FaReact className='icon' />
+                  </span>
                   <span className='resume__contact__text'>
                     MyWeddingWebsite.online (React)
                   </span>
@@ -64,6 +78,9 @@ const Resume = () => {
                 className='resume__contact__link'
               >
                 <li>
+                <span class="resume__contact__icon"
+                    ><FaJsSquare className='icon' />
+                  </span>
                   <span className='resume__contact__text'>
                     KrustyKrab.us (JavaScript)
                   </span>
@@ -76,6 +93,9 @@ const Resume = () => {
                 className='resume__contact__link'
               >
                 <li>
+                <span class="resume__contact__icon"
+                    ><FaGithub className='icon' />
+                  </span>
                   <span className='resume__contact__text'>
                     GitHub.com/AmberMichaelis
                   </span>
@@ -88,12 +108,18 @@ const Resume = () => {
                 className='resume__contact__link'
               >
                 <li>
+                <span class="resume__contact__icon"
+                    ><FaLinkedin className='icon' />
+                  </span>
                   <span className='resume__contact__text'>
                     LinkedIn.com/AmberMichaelis
                   </span>
                 </li>
               </a>
               <li>
+              <span class="resume__contact__icon"
+                    ><FaSearchLocation className='icon' />
+                  </span>
                 <span className='resume__contact__text'>Remote, USA</span>
               </li>
             </ul>

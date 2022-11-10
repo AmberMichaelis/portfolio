@@ -17,13 +17,13 @@ const Navbar = () => {
   const handleClick = () => setClick(!click);
 
   const [color, setColor] = useState(false);
-    const changeColor = () => {
-      if (window.scrollY >= 100 && window.innerWidth > 1240) {
-        setColor(true)
-      } else {
-        setColor(false)
-      }
+  const changeColor = () => {
+    if (window.scrollY >= 100 && window.innerWidth > 1240) {
+      setColor(true);
+    } else {
+      setColor(false);
     }
+  };
 
   window.addEventListener('scroll', changeColor);
 
@@ -36,30 +36,48 @@ const Navbar = () => {
         <li>
           <Link to='/resume'>Resume</Link>
         </li>
-        <li>
-          <Link to='/projects'>Projects</Link>
-        </li>
+        {/* <li>
+          <Link to='/blog'>Blog</Link>
+        </li> */}
         <li>
           <Link to='/contact'>Contact</Link>
         </li>
         <li>
           {' '}
           <div className='social'>
-            <FaGithub
-            className='icons'
-              size={30}
-              style={{ color: 'white', marginRight: '1rem' }}
-            />
-            <FaLinkedin
-            className='icons'
-              size={30}
-              style={{ color: 'white', marginRight: '1rem' }}
-            />
-            <FaPaperPlane
-            className='icons'
-              size={30}
-              style={{ color: 'white', marginRight: '1rem' }}
-            />
+            <a
+              href='https://github.com/AmberMichaelis'
+              target='_blank'
+              rel='noreferrer'
+            >
+              <FaGithub
+                className='icons'
+                size={30}
+                style={{ color: 'white', marginRight: '1rem' }}
+              />
+            </a>
+            <a
+              href='https://www.linkedin.com/in/ambermichaelis/'
+              target='_blank'
+              rel='noreferrer'
+            >
+              <FaLinkedin
+                className='icons'
+                size={30}
+                style={{ color: 'white', marginRight: '1rem' }}
+              />
+            </a>
+            <a
+              href='mailto:amberm31@protonmail.com?subject=Development Inquiry'
+              target='_blank'
+              rel='noreferrer'
+            >
+              <FaPaperPlane
+                className='icons'
+                size={30}
+                style={{ color: 'white', marginRight: '1rem' }}
+              />
+            </a>
           </div>
         </li>
       </ul>

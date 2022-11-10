@@ -9,6 +9,7 @@ import {
   FaFile,
   FaPaperPlane,
 } from 'react-icons/fa';
+import { Link } from 'react-router-dom';
 
 const Footer = () => {
   return (
@@ -22,28 +23,36 @@ const Footer = () => {
             </h4>
           </div>
           <div className='footer-resume info'>
+            <Link to="/resume">
             <h4>
               <FaFile className='icon' />
               Resume
             </h4>
+            </Link>
           </div>
           <div className='footer-github info'>
+            <a href="https://github.com/AmberMichaelis" target="_blank" rel="noreferrer">
             <h4>
               <FaGithub className='icon' />
               Github
             </h4>
+            </a>
           </div>
           <div className='footer-linkedin info'>
+          <a href="https://www.linkedin.com/in/ambermichaelis/" target="_blank" rel="noreferrer">
             <h4>
               <FaLinkedin className='icon' />
               LinkedIn
             </h4>
+            </a>
           </div>
           <div className='footer-email info'>
+          <a href="mailto:amberm31@protonmail.com?subject=Development Inquiry" target="_blank" rel="noreferrer">
             <h4>
               <FaPaperPlane className='icon' />
               Email
             </h4>
+            </a>
           </div>
         </div>
       </div>

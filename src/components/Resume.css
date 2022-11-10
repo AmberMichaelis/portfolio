@@ -143,7 +143,7 @@
   font-size: 14px;
 }
 
-.resume__contact__info ul li .resume__contact__icon {
+.resume__contact__info .resume__contact__icon {
   display: inline-block;
   width: 30px;
   font-size: 18px;
@@ -155,7 +155,7 @@
   cursor: pointer;
 }
 
-.resume__contact__info .resume__contact__link:hover {
+.resume__contact__info .resume__contact__link span:hover {
   color: #ff3048;
 }
 
@@ -173,7 +173,7 @@
 
 .resume__contact__info.resume__education li h4:nth-child(2) {
   color: #fff;
-  font-weight: 500;
+  font-weight: 800;
   font-size: 18px;
   margin-bottom: 5px;
 }
