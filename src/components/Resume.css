@@ -2,27 +2,378 @@
 
 .resume {
   width: 100%;
-  height: 100%;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .resume-left,
 .resume-right {
-  text-align: center;
   margin: auto;
-  padding: 1rem 4rem;
-  max-width: 600px;
-}
-
-.resume-left p,
-.resume-right p {
-  margin: 1.2rem 0;
+  max-width: 900px;
 }
 
 @media screen and (max-width: 1140px) {
   .resume {
     grid-template-columns: 1fr;
+  }
+}
+
+.resume__body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.resume__container {
+  position: relative;
+  top: 80px;
+  margin-bottom: 80px;
+  width: 100%;
+  max-width: 1200px;
+  min-height: 1000px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 2fr;
+  grid-template-columns: 1fr 2fr;
+  -webkit-box-shadow: 0 35px 55px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 35px 55px rgba(0, 0, 0, 0.1);
+  border: 5px solid #fff;
+  border-radius: 10px;
+  cursor: default;
+}
+
+.resume__container .left__side {
+  position: relative;
+  padding: 40px;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+.profile__text {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding-bottom: 20px;
+  border-bottom: 1px solid white;
+}
+
+.profile__text h2 {
+  color: #fff;
+  font-size: 1.3em;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 600;
+  line-height: 1.3em;
+}
+
+.profile__text h2 span {
+  font-size: 0.8em;
+  font-weight: 300;
+}
+
+.resume__contact__title {
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 1px;
+  margin-bottom: 20px;
+}
+
+.resume__contact__info {
+  padding-top: 60px;
+}
+
+.resume__contact__info ul {
+  position: relative;
+}
+
+.resume__contact__info ul li {
+  position: relative;
+  list-style: none;
+  margin: 10px 0 0 5px;
+  cursor: pointer;
+}
+
+.resume__contact__info ul li span {
+  color: #fff;
+  font-weight: 300;
+}
+
+.resume__contact__info ul li .resume__contact__text {
+  font-size: 14px;
+}
+
+.resume__contact__info ul li .resume__contact__icon {
+  display: inline-block;
+  width: 30px;
+  font-size: 18px;
+  color: #ff3048;
+}
+
+.resume__contact__info .resume__contact__link {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.resume__contact__info .resume__contact__link:hover {
+  color: #ff3048;
+}
+
+.resume__contact__info.resume__education li {
+  margin-bottom: 30px;
+  cursor: default;
+}
+
+.resume__contact__info.resume__education li h5 {
+  color: #fff;
+  font-weight: 500;
+  font-size: 16px;
+  margin-bottom: 8px;
+}
+
+.resume__contact__info.resume__education li h4:nth-child(2) {
+  color: #fff;
+  font-weight: 500;
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+.resume__contact__info.resume__education li h4 {
+  color: #fff;
+  font-weight: 100;
+  font-size: 16px;
+}
+
+.resume__contact__info.resume__education li h6 {
+  color: #fff;
+  font-weight: 500;
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
+.resume__contact__info.resume__projects .resume__projects__button {
+  opacity: 1;
+  outline: 0;
+  background-color: #131313;
+  color: #fff;
+  line-height: 40px;
+  position: relative;
+  text-align: center;
+  letter-spacing: 1px;
+  display: inline-block;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 16px;
+  margin-bottom: 30px;
+}
+
+.resume__contact__info.resume__projects .resume__projects__button:hover:after {
+  opacity: 1;
+  -webkit-transform: translateY(0) rotateX(0);
+  transform: translateY(0) rotateX(0);
+}
+
+.resume__contact__info.resume__projects .resume__projects__button:hover:before {
+  opacity: 0;
+  -webkit-transform: translateY(50%) rotateX(90deg);
+  transform: translateY(50%) rotateX(90deg);
+}
+
+.resume__contact__info.resume__projects .resume__projects__button:after {
+  top: 0;
+  left: 0;
+  opacity: 0;
+  width: 100%;
+  color: #fff;
+  display: block;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  position: absolute;
+  background: #131313;
+  border: 3px solid #ff3048;
+  content: attr(data-back);
+  -webkit-transform: translateY(-50%) rotateX(90deg);
+  transform: translateY(-50%) rotateX(90deg);
+}
+
+.resume__contact__info.resume__projects .resume__projects__button:before {
+  top: 0;
+  left: 0;
+  opacity: 1;
+  color: #fff;
+  display: block;
+  padding: 0 30px;
+  line-height: 40px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  position: relative;
+  background: #131313;
+  border: 3px solid #fff;
+  content: attr(data-front);
+  -webkit-transform: translateY(0) rotateX(0);
+  transform: translateY(0) rotateX(0);
+}
+
+.resume__container .right__side {
+  position: relative;
+  padding: 40px;
+}
+
+.resume__about {
+  margin-bottom: 50px;
+}
+
+.resume__about .resume__about__title {
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 10px;
+}
+
+.resume__about p .resume__pull__requests {
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.resume__about p .resume__pull__requests:hover {
+  color: #ff3048;
+}
+
+.resume__about .resume__experience__box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  margin: 20px 0;
+}
+
+.resume__about .resume__experience__box .resume__experience__year__company {
+  min-width: 200px;
+}
+
+.resume__about .resume__experience__box .resume__experience__year__company h5 {
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+.resume__about
+  .resume__experience__box
+  .resume__experience__year__company
+  .resume__experience__location {
+  font-size: 12px;
+}
+
+.resume__about .resume__experience__box .resume__experience__text h4 {
+  text-transform: uppercase;
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+.resume__about .resume__experience__box .resume__experience__text p {
+  font-size: 16px;
+}
+
+.resume__about:last-child {
+  margin-bottom: 0;
+}
+
+.resume__skills .resume__experience__box {
+  position: relative;
+  width: 100%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 200px 1fr;
+  grid-template-columns: 200px 1fr;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.resume__skills .resume__experience__box h4 {
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.resume__skills .resume__experience__box .resume__languages__percent {
+  position: relative;
+  width: 100%;
+  height: 10px;
+  background-color: #333;
+}
+
+.resume__skills .resume__experience__box .resume__languages__percent div {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  background-color: #ff3048;
+}
+
+@media (max-width: 1000px) {
+  .resume__container {
+    margin: 10px;
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .resume__contact__info ul li .resume__contact__text {
+    font-size: 12px;
+  }
+  .resume__contact__title {
+    text-align: center;
+  }
+  .resume__education {
+    text-align: center;
+  }
+  .resume__contact__info.resume__education li h5 {
+    margin-top: 35px;
+  }
+  .resume__contact__info {
+    padding-top: 35px;
+  }
+  .resume__about .resume__about__title {
+    text-align: center;
+  }
+  .resume__about {
+    text-align: center;
+  }
+  .resume__about .resume__experience__box {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+  .resume__about .resume__experience__box .resume__experience__year__company {
+    margin-bottom: 10px;
+  }
+  .resume__skills .resume__experience__box {
+    grid-template-columns: repeat(1, 1fr);
   }
 }
