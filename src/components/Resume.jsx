@@ -111,14 +111,13 @@ const Resume = () => {
             <div className='resume__about'>
               <h2 className='resume__about__title'>Profile</h2>
               <p>
-                2 years of full stack development experience. 4 years of remote
-                experience. Jest unit testing, libraries including jQuery,
+                2 years of full stack development experience. 4 years working remotely. Testing frameworks Jest and JUnit, libraries including jQuery,
                 database tools such as Postman, and asynchronous programming.
                 Scored in the top 5% of 2.2M people on LinkedIn JavaScript
                 assessment.
                 <br />
                 <br />
-                Pursuing an online Masters of Computer Science. Enjoy being in
+                Pursuing a Masters of Computer Science. Enjoy being in
                 nature and reading.
               </p>
             </div>
