@@ -29,6 +29,10 @@
   font-weight: 500;
 }
 
+.nav-menu a:hover {
+  color: #ff3048;
+}
+
 .social .icons {
   cursor: pointer;
 }

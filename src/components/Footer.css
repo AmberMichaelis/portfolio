@@ -24,10 +24,21 @@
   justify-content: center;
 }
 
+.footer h3 {
+  color: white;
+  font-size: 1.4rem;
+  padding: 1rem 0;
+  text-align: center;
+}
+
 .footer h4 {
   font-size: 1.4rem;
   padding: 1rem 0;
   text-align: center;
+}
+
+.footer h4:hover {
+  color: #ff3048;
 }
 
 .info {
@@ -44,7 +55,10 @@
 }
 
 @media screen and (max-width: 640px) {
+  .footer h3 {
+    font-size: 1.5rem;
+  }
   .footer h4 {
-  font-size: 1.5rem;
+    font-size: 1.5rem;
   }
 }

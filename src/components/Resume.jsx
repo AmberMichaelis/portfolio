@@ -4,13 +4,7 @@ import React from 'react';
 import './Resume.css';
 import '../index.css';
 import spaceVideo from '../assests/space.mp4';
-import {
-  FaGithub,
-  FaLinkedin,
-  FaPaperPlane,
-  FaReact,
-  FaJsSquare,
-} from 'react-icons/fa';
+import { FaGithub, FaLinkedin, FaPaperPlane } from 'react-icons/fa';
 
 const Resume = () => {
   return (
@@ -42,36 +36,6 @@ const Resume = () => {
                   </span>
                   <span className='resume__contact__text'>
                     AmberM31@protonmail.com
-                  </span>
-                </li>
-              </a>
-              <a
-                href='https://nimble-truffle-a9d6f9.netlify.app/'
-                target='_blank'
-                rel='noreferrer'
-                className='resume__contact__link'
-              >
-                <li>
-                  <span class='resume__contact__icon'>
-                    <FaReact className='icon' />
-                  </span>
-                  <span className='resume__contact__text'>
-                    MyWeddingWebsite.online (React)
-                  </span>
-                </li>
-              </a>
-              <a
-                href='https://www.krustykrab.us/'
-                target='_blank'
-                rel='noreferrer'
-                className='resume__contact__link'
-              >
-                <li>
-                  <span class='resume__contact__icon'>
-                    <FaJsSquare className='icon' />
-                  </span>
-                  <span className='resume__contact__text'>
-                    KrustyKrab.us (JavaScript)
                   </span>
                 </li>
               </a>
@@ -128,20 +92,19 @@ const Resume = () => {
               </li>
             </ul>
           </div>
-          
-          <div className='resume__contact__info resume__projects flip'>
-              <a
-                href='https://www.krustykrab.us/projects.html'
-                target='_blank'
-                rel='noreferrer'
-                className='resume__projects__button'
-                data-back='Click Me'
-                data-front='Personal Projects'
-              >
-                {' '}
-              </a>
-            </div>
 
+          <div className='resume__contact__info resume__projects flip'>
+            <a
+              href='https://www.krustykrab.us/projects.html'
+              target='_blank'
+              rel='noreferrer'
+              className='resume__projects__button'
+              data-back='Click Me'
+              data-front='Personal Projects'
+            >
+              {' '}
+            </a>
+          </div>
         </div>
         <div className='resume__right'>
           <div className='rightStuff'>
@@ -149,10 +112,10 @@ const Resume = () => {
               <h2 className='resume__about__title'>Profile</h2>
               <p>
                 2 years of full stack development experience. 4 years of remote
-                experience. Jest unit testing, libraries
-                including jQuery, database tools such as Postman, and
-                asynchronous programming. Scored in the top 5% of 2.2M people on
-                LinkedIn JavaScript assessment.
+                experience. Jest unit testing, libraries including jQuery,
+                database tools such as Postman, and asynchronous programming.
+                Scored in the top 5% of 2.2M people on LinkedIn JavaScript
+                assessment.
                 <br />
                 <br />
                 Pursuing an online Masters of Computer Science. Enjoy being in

@@ -17,10 +17,10 @@ const Footer = () => {
       <div className='footer-container'>
         <div className='footer-left'>
           <div className='footer-location info'>
-            <h4>
+            <h3>
               <FaSearchLocation className='icon' />
               USA
-            </h4>
+            </h3>
           </div>
           <div className='footer-resume info'>
             <Link to="/resume">
