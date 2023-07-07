@@ -141,10 +141,9 @@ const Resume = () => {
                   </h5>
                 </div>
                 <div className='resume__experience__text'>
-                  <h4>Global Flight Operations Full Stack Developer</h4>
+                  <h4>Global Flight Operations Schedule Coordinator</h4>
                   <p>
-                    Various frontend and backend projects using Ruby on Rails,
-                    AzureSQL, AWS. International helicopter flight following,
+                    International helicopter flight following,
                     scheduling, and maintenance records for US Coast Guard,
                     Search and Rescue, and Oil and Gas customers.
                   </p>
