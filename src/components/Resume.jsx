@@ -76,20 +76,28 @@ const Resume = () => {
             <h3 className='resume__contact__title'>Education</h3>
             <ul>
               <li>
-                <h5>2022 - Present</h5>
-                <h4>MS Computer Science</h4>
-                <h6>
-                  Data Sturctures & Algorithms <br />
-                  Professional Certificate
-                </h6>
-                <h4>Georgia Institute of Technology (USA)</h4>
-              </li>
-              <li>
                 <h5>2012 - 2017</h5>
                 <h4>BS Chemical Engineering</h4>
                 <h6>Minors: Math, Biology, Chemistry</h6>
                 <h4>McNeese State University (USA)</h4>
               </li>
+              <a
+                href='https://www.linkedin.com/in/ambermichaelis/'
+                target='_blank'
+                rel='noreferrer'
+                className='resume__contact__link'
+              >
+                <li>
+                  <h5>2022 - 2023</h5>
+                  <h4>
+                    4 Professional Certificates
+                  </h4>
+                  <h6>
+                    Advanced Data Sturctures & Algorithms <br />
+                  </h6>
+                  <h4>Georgia Institute of Technology (USA)</h4>
+                </li>
+              </a>
             </ul>
           </div>
 
@@ -111,21 +119,40 @@ const Resume = () => {
             <div className='resume__about'>
               <h2 className='resume__about__title'>Profile</h2>
               <p>
-                2 years of full stack development experience. 4 years working remotely. Testing frameworks Jest and JUnit, libraries including jQuery,
-                database tools such as Postman, and asynchronous programming.
-                Scored in the top 5% of 2.2M people on LinkedIn JavaScript
-                assessment.
+                2 years of full stack development experience. 4 years working
+                remotely. Testing frameworks Jest and JUnit, libraries including
+                jQuery, database tools such as Postman, and asynchronous
+                programming. Scored in the top 5% of 2.2M people on LinkedIn
+                JavaScript assessment.
                 <br />
                 <br />
-                Pursuing a Masters of Computer Science. Enjoy being in
-                nature and reading.
+                Currently working on Amazon Web Services Developer
+                Certifications. Enjoy being in nature and reading.
               </p>
             </div>
             <div className='resume__about'>
               <h2 className='resume__about__title'>Experience</h2>
               <div className='resume__experience__box'>
                 <div className='resume__experience__year__company'>
-                  <h5>2021 - Present</h5>
+                  <h5>2023 - Present</h5>
+                  <h5>Bristow Group</h5>
+                  <h5 className='resume__experience__location'>
+                    Louisiana, USA
+                  </h5>
+                </div>
+                <div className='resume__experience__text'>
+                  <h4>Global Flight Operations Full Stack Developer</h4>
+                  <p>
+                    Various frontend and backend projects using Ruby on Rails,
+                    AzureSQL, AWS. International helicopter flight following,
+                    scheduling, and maintenance records for US Coast Guard,
+                    Search and Rescue, and Oil and Gas customers.
+                  </p>
+                </div>
+              </div>
+              <div className='resume__experience__box'>
+                <div className='resume__experience__year__company'>
+                  <h5>2021 - 2023</h5>
                   <h5>Self-Employed</h5>
                   <h5 className='resume__experience__location'>
                     Remote USA/Europe
